@@ -23,6 +23,5 @@ stage("Git CheckOut"){
     sshagent(['ad1047a1-6c50-498c-9fd7-389bee5ec464']) {
     sh "ssh -o StrictHostKeyChecking=no ubuntu@13.232.50.184 docker rm -f cloudcandy || true"
     sh "ssh -o StrictHostKeyChecking=no ubuntu@13.232.50.184 docker run -itd -p 8082:8080 --name cloudcandy vignesh1592/javawebapp:${buildNumber}"           
-    }  }
-           
-    }       
+     }  }
+   }
