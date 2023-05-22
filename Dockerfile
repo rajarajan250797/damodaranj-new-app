@@ -3,7 +3,7 @@ FROM openjdk:11
 
 # Set the working directory inside the container
 WORKDIR /app
-
+hb 
 # Copy the application JAR file to the container
 COPY target/newapp.war /app/your-application.jar
 
